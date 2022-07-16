@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --clr: #16171a;
+}
+
+body{
+    background-color: var(--clr);
+}
+
+.navbar{
+    position: absolute;
+    width: 60px;
+    height: 668px;
+    background-color: rgba(255, 255, 255, 0.041);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: 0.5s;
+    /* left: 37%; */
+}
+.navbar:hover{
+    /* width: 149px; */
+}
+.navbar:hover ul li{
+    /* left: -30px; */
+}
+.navbar ul{
+    /* display: flex;
+    width: 241px; */
+}
+.navbar ul li{
+    position: relative;
+    list-style: none;
+    width: 51px;
+    height: 70px;
+    z-index: 1;
+    margin: 12px;
+    top: -194px;
+    transition: 0.5s;
+}
+.navbar ul li a{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+.navbar ul li a .icon{
+    position: relative;
+    display: block;
+    line-height: 59px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: rgb(99, 97, 97);
+    width: 100%;
+    border-radius: 10px;
+    
+}
+.navbar ul li.act a .icon{
+    background-color: rgba(255, 255, 255, 0.034);
+}
+.navbar ul li a .text{
+    position: absolute;
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateX(20px);
+    left: 58px;
+    top: -1px;
+}
+.navbar ul li:hover a .text{
+    opacity: 1;
+    transform: translateY(20px);
+}
+.navbar ul li:hover a .icon{
+    background-color: rgba(255, 255, 255, 0.089);
+    color: whitesmoke;
+}
+.ind{
+    position: absolute;
+    top: 37px;
+    right: -1px;
+    width: 4px;
+    height: 36px;
+    background-color: #ff0000b3;
+    border-radius: 5px;
+    transition: 0.5s;
+    /* opacity: 0; */
+}
+.navbar ul li:nth-child(1).act ~ .ind{
+    transform: translatey(calc(70px * 0));
+    
+}
+.navbar ul li:nth-child(2).act ~ .ind{
+    transform: translatey(calc(80px * 1));
+    
+}
+.navbar ul li:nth-child(3).act ~ .ind{
+    transform: translatey(calc(80px * 2));
+}
+
+
+.navbar ul li:nth-child(1).act:hover ~ .ind{
+    /* opacity: 1; */
+    height: 43px;
+    top: 35;
+}
+.navbar ul li:nth-child(2).act:hover ~ .ind{
+    /* opacity: 1; */
+    height: 43px;
+    top: 35;
+}
+.navbar ul li:nth-child(3).act:hover ~ .ind{
+    /* opacity: 1; */
+    height: 43px;
+    top: 35;
+}
+.base
+{
+    left: 72px;
+    top: 40px;
+    color: white;
+    position: absolute;
+}
+.nothing{
+    left: 72px;
+    top: 200px;
+    color: white;
+    position: absolute;
+}
+
+

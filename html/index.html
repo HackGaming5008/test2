@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HG Web</title>
+    <link rel="stylesheet" href="/profects/website/my first wedsite/css/style.css">
+    <script src="/profects/website/my first wedsite/js/index.js"></script>
+</head>
+<body>
+    <div class="main-root">
+        <nav class="navbar">
+            <ul>
+                <li class="list act">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">
+                            Home
+                        </span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </span>
+                        <span class="text">
+                            Chat
+                        </span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="Settings-outline"></ion-icon>
+                        </span>
+                        <span class="text">
+                            Settings
+                        </span>
+                    </a>
+                </li>
+                <div class="ind"></div>
+            </ul>
+        </nav>
+
+        <div class="Home">
+            <div class="base">
+                <h2>hi guys I am nothing</h2>
+            </div>
+        </div>
+        <div class="chat">
+            <div class="nothing">
+                <h2>Hi guys this is chat</h2>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('act'));
+            this.classList.add('act');
+        }
+        list.forEach((item) =>
+        item.addEventListener('click',activeLink));
+    </script>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
